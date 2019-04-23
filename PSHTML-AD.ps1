@@ -57,15 +57,15 @@ param (
 	#Logo that will be on the right side, UNC or URL
 
 	[Parameter(ValueFromPipeline = $true, HelpMessage = "Enter URL or UNC path for Side Logo")]
-	[String]$RightLogo = "https://www.psmpartners.com/wp-content/uploads/2017/10/porcaro-stolarek-mete.png",
+	[String]$RightLogo = "https://www.conres.com/wp-content/themes/the-box/images/conres-logo.svg",
 	#Title of generated report
 
 	[Parameter(ValueFromPipeline = $true, HelpMessage = "Enter desired title for report")]
 	[String]$ReportTitle = "Active Directory Report",
 	#Location the report will be saved to
 
-	[Parameter(ValueFromPipeline = $true, HelpMessage = "Enter desired directory path to save; Default: C:\Automation\")]
-	[String]$ReportSavePath = "C:\Automation\",
+	[Parameter(ValueFromPipeline = $true, HelpMessage = "Enter desired directory path to save; Default: C:\Scripts\")]
+	[String]$ReportSavePath = "C:\Scripts\",
 	#Find users that have not logged in X Amount of days, this sets the days
 
 	[Parameter(ValueFromPipeline = $true, HelpMessage = "Users that have not logged on in more than [X] days. amount of days; Default: 30")]
